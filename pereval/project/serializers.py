@@ -51,7 +51,7 @@ class PerevalSerializer(WritableNestedModelSerializer):
         coord_id = Coords.objects.create(**coord_id)
         level = Level.objects.create(**level)
         pereval = Pereval.objects.create(**validated_data, tourist_id=tourist_id, coord_id=coord_id, level=level,
-                                         status="NW")
+                                         status="new")
 
         for i in images:
             image = i.pop('image')

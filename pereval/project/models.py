@@ -37,7 +37,7 @@ class Pereval(models.Model):
 class Coords(models.Model):
     latitude=models.DecimalField(decimal_places=8, max_digits=10)
     longitude=models.DecimalField(decimal_places=8, max_digits=10)
-    height=models.IntegerField(default = 0)
+    height=models.IntegerField(default=0)
 
 
 class Level(models.Model):
