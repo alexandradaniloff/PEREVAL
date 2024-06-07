@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from .models import *
-from drf_writable_nested import WritableNestedModelSerializerfrom
+from drf_writable_nested import WritableNestedModelSerializer
 
 
 class UsersSerializer(serializers.ModelSerializer):
@@ -62,8 +62,8 @@ class PerevalSerializer(WritableNestedModelSerializer):
 
     def validate(self, data):
         if self.instance is not None:
-            instance_user = self.instance.user
-            data_user = data.get('user')
+            instance_user = self.instance.tourist_id
+            data_user = data.get('tourist_id')
             validating_user_fields = [
                 instance_user.last_name != data_user['last_name'],
                 instance_user.first_name != data_user['first_name'],
