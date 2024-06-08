@@ -86,7 +86,6 @@ DATABASES = {
      'default': {
          'ENGINE': 'django.db.backends.sqlite3',
          'NAME': BASE_DIR / 'db.sqlite3',
-
          'USER': os.getenv('FSTR_DB_LOGIN'),
          'PASSWORD': os.getenv('FSTR_DB_PASS'),
          'HOST': os.getenv('FSTR_DB_HOST'),
@@ -96,14 +95,15 @@ DATABASES = {
 
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'pereval',
-#         'USER': 'postgres',
-#         'PASSWORD': 'postgres',
-#         'HOST': '192.168.99.100',
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'rest1',
+#         'USER': 'virtual1',
+#         'PASSWORD': 'Virtual1',
+#         'HOST': '192.168.56.101',
 #         'PORT': '5432',
 #     }
 # }
+
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
