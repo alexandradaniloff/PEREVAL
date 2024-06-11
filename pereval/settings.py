@@ -35,6 +35,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['alexandradaniloff.pythonanywhere.com']
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
