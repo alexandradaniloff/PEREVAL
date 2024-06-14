@@ -4,6 +4,10 @@ from rest_framework.views import APIView
 from .serializers import *
 from .models import *
 from rest_framework.response import Response
+from django.views.generic import TemplateView
+
+class IndexView(TemplateView):
+    template_name = 'perevall.html'
 
 class UsersViewset(viewsets.ModelViewSet):
    queryset = Users.objects.all()
