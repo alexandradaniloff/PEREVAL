@@ -124,4 +124,13 @@ class PerevalSerializer(WritableNestedModelSerializer):
 ### Документация сгенерирована с помощью пакета drf-yasg
 
 Документация swagger: http://127.0.0.1:8000/swagger/
+
 Документация redoc: http://127.0.0.1:8000/redoc/
+
+### Проект опубликован на хостинге pythonanywhere.com
+
+API Pereval: https://alexandradaniloff.pythonanywhere.com/
+
+Документация swagger: https://alexandradaniloff.pythonanywhere.com/swagger/
+
+Документация redoc: https://alexandradaniloff.pythonanywhere.com/redoc/
