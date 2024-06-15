@@ -17,9 +17,5 @@ router.register(r'images', views.ImagesViewset, basename='images')
 router.register(r'perevals', views.PerevalViewset, basename='perevals')
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path('', include(router.urls)),
-    #path('api-auth/', UsersViewset.as_view({'get': 'list'}))
-
-
 ]
