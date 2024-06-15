@@ -121,7 +121,7 @@ class PerevalSerializer(WritableNestedModelSerializer):
     }
 
 
-### Документация проекта с помощью Swagger.
+### Документация сгенерирована с помощью пакета drf-yasg
 
-http://127.0.0.1:8000/redoc/
-http://127.0.0.1:8000/swagger/
+Документация swagger: http://127.0.0.1:8000/swagger/
+Документация redoc: http://127.0.0.1:8000/redoc/
