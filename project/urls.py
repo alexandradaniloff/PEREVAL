@@ -2,7 +2,7 @@ from django.urls import path, include, re_path
 from django.contrib import admin
 from rest_framework import routers, permissions
 from project import views
-from pereval.yasg import urlpatterns as doc_urls
+from project.yasg import urlpatterns as doc_urls
 
 router = routers.DefaultRouter()
 router.register(r'users', views.UsersViewset, basename='users')
